@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Student Registration Form</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Enter Your Details</h2>
+            <form action="submit_registration.php" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="regNumber">Registration Number:</label>
+                <input type="text" id="regNumber" name="regNumber" required><br><br>
+
+                <label for="course">Course:</label>
+                <select id="course" name="course" required>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Electrical Engineering">Electrical Engineering</option>
+                    <option value="Civil Engineering">Civil Engineering</option>
+                    <option value="Business Administration">Business Administration</option>
+                </select><br><br>
+
+                <label for="year">Year of Study:</label>
+                <select id="year" name="year" required>
+                    <option value="1">1st Year</option>
+                    <option value="2">2nd Year</option>
+                    <option value="3">3rd Year</option>
+                    <option value="4">4th Year</option>
+                </select><br><br>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Student Registration System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
